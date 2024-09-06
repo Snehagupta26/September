@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
 int main(){
     // Hello World
@@ -42,8 +43,30 @@ int main(){
     // Print the ASCII Value of a Character 
     int vowel = 'a';
     cout<<vowel<<endl;
-
-    
+    //Calculate Fahrenheit to Celsius
+    int fah = 9;
+    float cel = (fah -32)*5/9;
+    cout<<cel<<endl;
+    // Find Simple Interest
+    int prin = 1;
+    int rate = 1;
+    int time = 100;
+    int si = prin*rate*time/100;
+    cout<<si<<endl;
+    //Area And Perimeter of Rectangle
+    int len = 3;
+    int bred = 4;
+    int peri = 2*(len+bred);
+    cout<<peri<<endl;
+    int area = len * bred;
+    cout<<area<<endl;
+    // Find Compound Interest
+    int pc = 1;
+    int rc = 1;
+    int nc = 1;
+    int tc = 2;
+    float comp = pc* pow((1+rc*nc), nc*tc);
+    cout<<comp<<endl;
 
     return 0;
 }
